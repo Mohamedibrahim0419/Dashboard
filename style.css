@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+    font-family: sans-serif;
+
+}
+body{
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap:30px
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.menu{
+   background-color: #2c3e50; 
+   width: 60px;
+   height: 100vh;
+   padding: 20px;
+   overflow: hidden;
+   transition: 0.5s;
+}
+
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+   
+}
+ul li h2 {
+    color: #ecf0f1;
+}
+ul li a{
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+ul li a:hover, .active  ,td:hover {
+    background-color: #16a085;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #a00;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: #e3f2fd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 8px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.data-info .box{
+    background-color: #ffff;
+    height: 150px;
+    width: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.data-info .box i{
+    font-size: 40px;
+    color: #16a085;
+}
+.data-info .box:hover  {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+td, th{
+  background: #ffffff;  
+  height: 40px;
+  border-radius: 8px;
+}
+th{
+    background-color:#16a085;
+}
+.prince, count{
+    padding: 6px;
+    border-radius: 6px;
+}
